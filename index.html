@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Kumar Paritala | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#Info">Info</a>/li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Home Section -->
+     <div class = "image-container">
+    <header id="home">
+        <img src="https://res.cloudinary.com/dwjvjsrkv/image/upload/v1744708809/profile_pic_gvmpjp.jpg"class="NTR"/>
+        <img src="images/headshot.jpg"  class="headshot">
+        <h1>Hemanth Kumar Paritala</h1>
+        <p>Full Stack Developer | Software Engineer|Entry level-Fresher</p>
+    </header>
+</div>
+
+<div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
+<div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Info</h2>
+        <p>
+            I'm a final-year B.E. Computer Science and Engineering student at Mahendra Institute of Technology, set to graduate in May 2025 with a CGPA of 82.8%. I’m passionate about building efficient, scalable software and have hands-on experience in full-stack development, data structures, and ML fundamentals.
+        </p>
+        <p>
+            I'm a fast learner and love working on real-world projects that challenge my problem-solving skills. Check out my work below or feel free to get in touch!
+        </p>
+    </section>
+   
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:paritalahemanthkumar@gmail.com">paritalahemanthkumar@gmail.com</a></p>
+        <p>Phone: +91 7993570842</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/hemanth-kumar-paritala-442444237" target="_blank">
+                <button>LinkedIn</button>
+            </a>
+            <a href="https://drive.google.com/file/d/1vBLTq4jHxxtPVQttg5vctpkYizwiXmms/view?usp=drivesdk" target="_blank">
+                <button>Resume</button>
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            "Hi, I’m Hemanth Kumar Paritala, a passionate Full Stack Developer and Software Engineer with a strong foundation in computer science. I’m graduating with a B.E. in Computer Science and Engineering from Mahendra Institute of Technology, where I’ve developed a keen interest in software development and problem-solving. With a solid understanding of Core Java, OOP principles, and web technologies, I specialize in React.js, Node.js, and database management using SQL. My journey has also led me to explore Machine Learning, where I’ve worked on a project focused on stock market prediction using LSTM, ARIMA, and NLP techniques. I believe in continuous learning and enjoy taking on challenges that push my skills to new heights. Feel free to explore my projects and get in touch!"
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects"> 
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.sd0ij-YSqWqLDvI4oFfVKwHaF7&pid=Api&P=0&h=180.jpg" class="project-img">
+            <h3>Stock Market Prediction using Machine Learning Techniques </h3>
+            <p>In this project, we developed a predictive model to forecast stock market trends using advanced machine learning algorithms. By combining historical stock price data with news sentiment analysis, we implemented LSTM (Long Short-Term Memory) and ARIMA models to improve prediction accuracy. Our goal was to analyze market behavior and provide insightful forecasts for better decision-making. The project involved key steps like data collection, preprocessing, feature selection, model development, and result visualization. Tools and technologies used include Python, Pandas, Scikit-learn, and NLP techniques. This work not only sharpened our technical skills but also deepened our understanding of real-world financial systems.</p>
+        </div> 
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
